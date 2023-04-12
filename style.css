@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.contentwidth {
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.navcontainer {
+    background-color: #1f2937;
+}
+
+.navigation {
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    font-size: 24px;
+    font-weight: 800;
+    color: #f9faf8;
+}
+
+.navi {
+    display: flex;
+    margin-left: auto;
+    gap: 30px;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+.herocontainer {
+    margin: 90px auto 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero {
+    width: 45%;
+}
+
+.heroheader {
+    font-size: 48px;
+    font-weight: 800;
+    color: #f9faf8;
+}
+
+.herotext {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.herobutton button {
+    padding: 8px 32px;
+    margin: 16px 0;
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-weight: 800;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.heroimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f9faf8;
+    background-color: grey;
+    margin-left: 20px;
+    width: 55%;
+    padding: 15px;
+}
+
+.randomcontainer {
+    background-color: #fff;
+}
+
+.randominfo {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.randomtitle {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+    margin: 50px;
+}
+
+.randomitems {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.randomitem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 162px;
+    margin: 10px;
+}
+
+.item {
+    height: 155px;
+    width: 155px;
+    border-radius: 12px;
+    border: 4px solid #3882f6;
+}
+
+.itemtext {
+    margin-top: 10px;
+    font-size: 18px;
+    color:#444;
+}
+
+.quotecontainer {
+    height: 50px;
+    background-color: #e5e7eb;
+}
+
+.quote {
+    margin: 0 auto;
+}
+
+.signupcontainer {
+    height: 50px;
+    background-color: #fff;
+}
+
+.signup {
+    margin: 0 auto;
+}
+
+.footer {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    color: #f9faf8;
+}
