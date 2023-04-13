@@ -3,10 +3,20 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    min-width: 320px;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #e5e7eb;
 }
 
 .contentwidth {
@@ -24,14 +34,13 @@ body {
 
 .navigation {
     display: flex;
+    align-items: center;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 0;
 }
 
-.header {
-    font-size: 24px;
-    font-weight: 800;
-    color: #f9faf8;
+.header img {
+    width: 150px;
 }
 
 .navi {
@@ -51,11 +60,11 @@ li {
     margin: 90px auto 130px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
 .hero {
-    width: 45%;
+    max-width: 500px;
     margin-right: 15px;
 }
 
@@ -78,17 +87,11 @@ li {
     font-weight: 800;
     border-radius: 8px;
     font-size: 18px;
+    cursor: pointer;
 }
 
-.heroimage {
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #f9faf8;
-    background-color: grey;
-    width: 500px;
-    height: 200px;
+.heroimage img {
+    max-width: 100%;
 }
 
 .randomcontainer {
@@ -104,14 +107,15 @@ li {
     font-size: 36px;
     font-weight: 800;
     color: #1f2937;
-    margin: 50px;
+    margin: 75px 0 50px;
 }
 
 .randomitems {
-    margin-bottom: 100px;
+    margin-bottom: 75px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .randomitem {
@@ -124,17 +128,14 @@ li {
     margin: 10px;
 }
 
-.item {
-    height: 155px;
-    width: 155px;
-    border-radius: 12px;
-    border: 4px solid #3882f6;
+.item img {
+    height: 180px;
 }
 
 .itemtext {
     margin-top: 10px;
     font-size: 18px;
-    color:#444;
+    color: #444;
 }
 
 .quotecontainer {
@@ -148,7 +149,7 @@ li {
 
 .quotetext {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     font-size: 36px;
     font-style: italic;
     font-weight: 300;
@@ -181,6 +182,12 @@ li {
     padding: 30px 80px;
 }
 
+.signupheader {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
 .signup button {
     padding: 8px 32px;
     margin: 16px 0;
@@ -188,12 +195,14 @@ li {
     font-weight: 600;
     border-radius: 8px;
     background-color: #3882f6;
-    color:#e5e7eb;
+    color: #e5e7eb;
+    cursor: pointer;
 }
 
 
 .footer {
     display: flex;
+    flex-direction: column;
     padding: 40px;
     justify-content: center;
     align-items: center;
@@ -201,7 +210,39 @@ li {
     color: #f9faf8;
 }
 
-.signupheader {
-    font-size: 24px;
-    font-weight: 600;
+.copyright {
+    margin-bottom: 15px;
 }
+
+@media screen and (max-width: 1200px) {
+    .navcontainer {
+        padding: 30px;
+    }
+
+    .herocontainer {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .hero {
+        margin: 50px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 440px) {
+
+
+    .navigation {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .header {
+    }
+
+    .navi {
+        margin: 40px auto 0;
+    }
+}
+    

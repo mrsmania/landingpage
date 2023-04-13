@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -15,67 +13,75 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="top">
         <div class="navcontainer">
             <div class="navigation contentwidth">
-                <div class="header">Header Logo</div>
+                <div class="header"><a href="#"><img src="img/sm-logo.png"></a></div>
                 <ul class="navi">
-                    <li>header link one</li>
-                    <li>header link two</li>
-                    <li>header link three</li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#quote">Quote</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="herocontainer contentwidth">
                 <div class="hero">
-                    <div class="heroheader">This website is awesome</div>
-                    <div class="herotext">This website has some subtext that goes here under the main title. It's a
-                        smaller fonr and the color is lower contrast.</div>
-                    <div class="herobutton"><button>Sign up</button></div>
+                    <div class="heroheader">It's-a me, Mario.</div>
+                    <div class="herotext">Welcome on my first landing page. My name is Mario and this is my first TOP
+                        project, including everything about HTML, CSS and flexbox.</div>
+                    <div class="herobutton"><a href="#"><button>Sign up</button></a></div>
                 </div>
-                <div class="heroimage">this is a placeholder for an image</div>
+                <div class="heroimage"><img src="img/sm-title2.png" width="500px"></div>
             </div>
         </div>
-        <div class="randomcontainer">
+        <div class="randomcontainer" id="team">
             <div class="randominfo contentwidth">
-                <div class="randomtitle">Some random information.</div>
+                <div class="randomtitle">This is my team - wahoo!</div>
                 <div class="randomitems">
                     <div class="randomitem">
-                        <div class="item"></div>
-                        <div class="itemtext">this is some subtext under an illustration or image</div>
+                        <div class="item"><img src="img/luigi.png"></div>
+                        <div class="itemtext">This is my younger brother, Luigi. He usually is a coward but can
+                            sometimes turn into a hero.</div>
                     </div>
                     <div class="randomitem">
-                        <div class="item"></div>
-                        <div class="itemtext">this is some subtext under an illustration or image</div>
+                        <div class="item"><img src="img/peach.png"></div>
+                        <div class="itemtext">Peach, Princess of the Mushroom Kingdom and my (more or less) secret
+                            crush. </div>
                     </div>
                     <div class="randomitem">
-                        <div class="item"></div>
-                        <div class="itemtext">this is some subtext under an illustration or image</div>
+                        <div class="item"><img src="img/toad.png"></div>
+                        <div class="itemtext">My buddy Toad is Peach's loyal attendant and protector.</div>
                     </div>
                     <div class="randomitem">
-                        <div class="item"></div>
-                        <div class="itemtext">this is some subtext under an illustration or image</div>
+                        <div class="item"><img src="img/yoshi.png"></div>
+                        <div class="itemtext">Our favourite ally, the adorable Yoshi. It's so much fun riding him.</div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="quotecontainer">
+        <div class="quotecontainer" id="quote">
             <div class="quote contentwidth">
-                <div class="quotetext">This is an inspiring qupte, or a testimonial from a customer. Maybe it's just
-                    filling up space, or maybe people will actually read it. Who knows? All I know is that it looks
-                    nice.</div>
-                <div class="quotename">-Thor, God of Thunder</div>
+                <div class="quotetext">Somebody suggested that, because they were the Mario Bros., their last name
+                    should be Mario. So, they made him "Mario Mario". I heard this and laughed rather loudly. Of course,
+                    this was ultimately included in the film. Based on the film, that's how their names ended up. But,
+                    just like Mickey Mouse doesn't really have a last name, Mario is really just Mario and Luigi is
+                    really just Luigi.</div>
+                <div class="quotename">-Shigeru Miyamo, founder of Super Mario</div>
             </div>
         </div>
-        <div class="signupcontainer">
+        <div class="signupcontainer" id="contact">
             <div class="signup contentwidth">
                 <div class="signupcontent">
-                    <div class="signupheader">Call to action! It's time!</div>
-                    <div class="signuptext">Sign up for our product by clicking that button right over there!</div>
+                    <div class="signupheader">Contact me now. Let's-a go!</div>
+                    <div class="signuptext">Mammia mia, nearly forgot to add a contact me possibility - use the button
+                        on the right.</div>
                 </div>
-                <div class="signupbutton"><button>Sign Up</button></div>
+                <div class="signupbutton"><a href="#"><button>Here we go!</button></a></div>
             </div>
         </div>
-        <div class="footer">Copyright © The Odin Project 2023</div>
+        <div class="footer">
+            <div class="copyright">Copyright © The Odin Project 2023</div>
+            <div class="toplink"><a href="#top">- back to top -</a></div>
+        </div>
     </div>
 </body>
 
