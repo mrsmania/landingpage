@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,7 +10,7 @@ body {
 }
 
 .contentwidth {
-    width: 80%;
+    max-width: 1000px;
 }
 
 .container {
@@ -50,10 +51,12 @@ li {
     margin: 90px auto 130px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero {
     width: 45%;
+    margin-right: 15px;
 }
 
 .heroheader {
@@ -78,14 +81,14 @@ li {
 }
 
 .heroimage {
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #f9faf8;
     background-color: grey;
-    margin-left: 20px;
-    width: 55%;
-    padding: 15px;
+    width: 500px;
+    height: 200px;
 }
 
 .randomcontainer {
@@ -135,22 +138,59 @@ li {
 }
 
 .quotecontainer {
-    height: 50px;
     background-color: #e5e7eb;
+    padding: 140px 0 100px;
 }
 
 .quote {
     margin: 0 auto;
 }
 
+.quotetext {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color: #1f2937;
+}
+
+.quotename {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0 auto;
+    width: 75%;
+    text-align: right;
+}
+
+
+
 .signupcontainer {
-    height: 50px;
     background-color: #fff;
 }
 
 .signup {
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882f6;
+    color: #e5e7eb;
+    margin: 80px auto;
+    border-radius: 8px;
+    padding: 30px 80px;
 }
+
+.signup button {
+    padding: 8px 32px;
+    margin: 16px 0;
+    border: 2px solid #e5e7eb;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: #3882f6;
+    color:#e5e7eb;
+}
+
 
 .footer {
     display: flex;
@@ -159,4 +199,9 @@ li {
     align-items: center;
     background-color: #1f2937;
     color: #f9faf8;
+}
+
+.signupheader {
+    font-size: 24px;
+    font-weight: 600;
 }
