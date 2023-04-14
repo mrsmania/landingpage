@@ -111,7 +111,6 @@ li {
 }
 
 .randomitems {
-    margin-bottom: 75px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -125,7 +124,7 @@ li {
     align-items: center;
     text-align: center;
     width: 162px;
-    margin: 10px;
+    margin: 10px 10px 40px 10px;
 }
 
 .item img {
@@ -140,6 +139,7 @@ li {
 
 .quotecontainer {
     background-color: #e5e7eb;
+    margin-top: 60px;
     padding: 140px 0 100px;
 }
 
@@ -169,6 +169,7 @@ li {
 
 .signupcontainer {
     background-color: #fff;
+    padding: 0 30px;
 }
 
 .signup {
@@ -179,7 +180,7 @@ li {
     color: #e5e7eb;
     margin: 80px auto;
     border-radius: 8px;
-    padding: 30px 80px;
+    padding: 30px 5%;
 }
 
 .signupheader {
@@ -188,7 +189,15 @@ li {
     margin-bottom: 5px;
 }
 
-.signup button {
+.signupcontent {
+    margin-right: 20px;
+}
+
+.signupbutton {
+    flex-shrink: 0;
+}
+
+.signupbutton button {
     padding: 8px 32px;
     margin: 16px 0;
     border: 2px solid #e5e7eb;
@@ -221,6 +230,10 @@ li {
         padding: 30px;
     }
 
+    .quotecontainer {
+        padding: 70px 30px;
+    }
+
     .herocontainer {
         flex-wrap: wrap;
         justify-content: center;
@@ -231,6 +244,48 @@ li {
         margin: 50px 0 0 0;
     }
 
+    .quotetext {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .heroheader {
+        font-size: 38px;
+        font-weight: 600;
+    }
+
+    .herotext, .itemtext {
+        font-size: 16px;
+    }
+    
+    .randomtitle, .quotetext {
+        font-size: 28px;
+    }
+
+    .randomtitle {
+        font-weight: 600;
+    }
+
+    .quotename, .signupheader {
+        font-size: 20px;
+    }
+
+    .signup {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5% 15px;
+    }
+
+    .signupcontent {
+        margin: 0;
+    }
+
+    .signupbutton button {
+        margin: 16px 0 0;
+    }
+    
 }
 
 @media screen and (max-width: 440px) {
