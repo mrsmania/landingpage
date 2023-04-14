@@ -1,5 +1,5 @@
 # Project: Landingpage
-Create an entire web page from a design provided by TOP. The design is provided in 2 images: One is an image of the complete website and the other one has some details about some of the fonts and colors to be used. After creating the page according to the given input I decided to go dive deeper into css and refresh my knowledge thereon.
+Create an entire web page from a design provided by TOP. The design is provided in 2 images: One is an image of the complete website and the other one has some details about some of the fonts and colors to be used. After creating the page according to the given input I decided to dive deeper into css and refresh my knowledge thereon.
 
 # Image Sources
 * Logo: https://commons.wikimedia.org/wiki/File:Mario_Series_Logo.svg
