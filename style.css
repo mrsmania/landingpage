@@ -215,7 +215,9 @@ li {
 }
 
 @media screen and (max-width: 1200px) {
-    .navcontainer {
+
+    .navcontainer,
+    .randomcontainer {
         padding: 30px;
     }
 
@@ -228,21 +230,25 @@ li {
     .hero {
         margin: 50px 0 0 0;
     }
+
 }
 
 @media screen and (max-width: 440px) {
 
+    .navcontainer {
+        padding: 10px 30px;
+    }
 
     .navigation {
         flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-
-    .header {
+        justify-content: center;
     }
 
     .navi {
-        margin: 40px auto 0;
+        margin: 15px auto 0;
+    }
+
+    .header img {
+        padding: 0 25px;
     }
 }
-    
